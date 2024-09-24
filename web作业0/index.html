@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 20px;
+            width: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #dcdcdc;
+        }
+        input[type="submit"], .lucky-button {
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #dcdcdc;
+        }
+        .lucky-button {
+            background-color: #4285f4;
+            color: white;
+        }
+        .link {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="image_search.html">Image Search</a>|
+        <a href="advanced_search.html">Advanced Search</a>
+    </div>
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <input type="submit" value="Google Search">
+        <input type="submit" class="lucky-button" value="I'm Feeling Lucky" formaction="https://www.google.com/search?btnI=I'm+Feeling+Lucky">
+    </form>
+</body>
+<link rel="stylesheet" href="styles.css">
+
+</html>

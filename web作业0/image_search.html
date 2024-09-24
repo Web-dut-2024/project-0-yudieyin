@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 20px;
+            width: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #dcdcdc;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #dcdcdc;
+        }
+        .link {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a class="link" href="index.html">Google Search</a>
+    <a class="link" href="advanced_search.html">Advanced Search</a>
+    <form action="https://www.google.com/search?tbm=isch" method="GET">
+        <input type="text" name="q" placeholder="Search Images...">
+        <input type="submit" value="Search Images">
+    </form>
+</body>
+<link rel="stylesheet" href="styles.css">
+
+</html>

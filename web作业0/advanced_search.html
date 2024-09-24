@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 20px;
+            width: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #dcdcdc;
+            text-align: left;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+        }
+        .link {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <a class="link" href="index.html">Google Search</a>
+    <a class="link" href="image_search.html">Image Search</a>
+    <form action="https://www.google.com/search" method="GET">
+        <label>Find pages with… “all these words:”</label>
+        <input type="text" name="allintext">
+        
+        <label>Find pages with… “this exact word or phrase:”</label>
+        <input type="text" name="q">
+        
+        <label>Find pages with… “any of these words:”</label>
+        <input type="text" name="q" placeholder="Separate with OR">
+        
+        <label>Find pages with… “none of these words:”</label>
+        <input type="text" name="q" placeholder="Exclude words">
+        
+        <input type="submit" value="Advanced Search">
+    </form>
+</body>
+<link rel="stylesheet" href="styles.css">
+
+</html>
